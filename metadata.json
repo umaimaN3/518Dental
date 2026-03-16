@@ -1,0 +1,5 @@
+{
+  "name": "518 Dental - Rochdale",
+  "description": "A modern and professional homepage for 518 Dental, a trusted family dentist in Rochdale offering NHS and private treatments.",
+  "requestFramePermissions": ["geolocation"]
+}
