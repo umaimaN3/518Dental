@@ -26,6 +26,8 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
+import { IMAGES } from './constants';
+
 const services = [
   { title: "Examination", icon: <Stethoscope className="w-5 h-5" />, description: "Comprehensive dental check-ups to maintain your oral health." },
   { title: "Hygiene", icon: <ShieldCheck className="w-5 h-5" />, description: "Professional cleaning and gum health maintenance." },
@@ -152,11 +154,11 @@ export default function App() {
             
             <div className="mt-16 flex items-center gap-8 border-t border-[#1a1a1a]/5 pt-8">
               <div className="flex -space-x-4">
-                {[1, 2, 3].map((i) => (
+                {IMAGES.hero.patients.map((url, i) => (
                   <div key={i} className="w-14 h-14 rounded-full border-4 border-[#fdfcfb] overflow-hidden">
                     <img 
-                      src={`https://picsum.photos/seed/p${i}/200/200`} 
-                      alt="Patient" 
+                      src={url} 
+                      alt={`Patient ${i + 1}`} 
                       className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                       referrerPolicy="no-referrer"
                     />
@@ -180,8 +182,8 @@ export default function App() {
           >
             <div className="relative aspect-[4/5] rounded-full overflow-hidden border-[12px] border-white shadow-2xl">
               <img 
-                src="https://picsum.photos/seed/dental-luxury/800/1000" 
-                alt="Modern Dental Clinic" 
+                src={IMAGES.hero.main} 
+                alt="Modern Dental Clinic Interior" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -254,7 +256,7 @@ export default function App() {
               >
                 <div className="relative mb-8 overflow-hidden rounded-2xl aspect-[16/10]">
                   <img 
-                    src={`https://picsum.photos/seed/service${i}/600/400`} 
+                    src={IMAGES.services[i] || `https://picsum.photos/seed/service${i}/600/400`} 
                     alt={service.title} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                     referrerPolicy="no-referrer"
@@ -284,8 +286,8 @@ export default function App() {
             <div className="relative">
               <div className="relative z-10 aspect-[4/5] rounded-[4rem] overflow-hidden border-[1px] border-[#1a1a1a]/5 shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/team-518/800/1000" 
-                  alt="The Team" 
+                  src={IMAGES.about} 
+                  alt="Our Dental Team" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
