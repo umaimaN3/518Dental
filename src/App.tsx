@@ -285,11 +285,10 @@ export default function App() {
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div className="relative">
               <div className="relative z-10 aspect-[4/5] rounded-[4rem] overflow-hidden border-[1px] border-[#1a1a1a]/5 shadow-2xl">
-                <img 
-                  src={IMAGES.about} 
-                  alt="Our Dental Team" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                <img
+                src={IMAGES.about}
+                alt="Our Dental Team"
+                className="w-full h-full object-cover"
                 />
               </div>
               {/* Decorative elements */}
