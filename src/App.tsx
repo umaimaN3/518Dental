@@ -360,7 +360,7 @@ export default function App() {
                   Book Online Now
                 </button>
                 <button className="bg-transparent text-white border border-white/20 px-12 py-6 rounded-full text-[11px] uppercase tracking-[0.2em] font-bold hover:bg-white/5 transition-all">
-                  Call 01706 645 518
+                  Call 01706 527127
                 </button>
               </div>
             </div>
@@ -412,11 +412,11 @@ export default function App() {
               <ul className="space-y-8">
                 <li className="flex gap-4 items-start">
                   <MapPin size={18} className="text-emerald-600 shrink-0 mt-1" />
-                  <span className="text-sm text-slate-400 leading-relaxed font-light">518 Whitworth Rd, Rochdale OL12 0SN, UK</span>
+                  <span className="text-sm text-slate-400 leading-relaxed font-light">518A Bury Rd, Rochdale OL11 4DQ</span>
                 </li>
                 <li className="flex gap-4 items-center">
                   <Phone size={18} className="text-emerald-600 shrink-0" />
-                  <span className="text-sm text-slate-400 font-light">01706 645 518</span>
+                  <span className="text-sm text-slate-400 font-light">01706 527127</span>
                 </li>
                 <li className="flex gap-4 items-center">
                   <Mail size={18} className="text-emerald-600 shrink-0" />
