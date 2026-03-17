@@ -15,5 +15,8 @@ export const IMAGES = {
     "https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?auto=format&fit=crop&q=80&w=600&h=400", // Preventive
     "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=600&h=400", // Emergency
   ],
-  about: "/team-img.png",
+};
+// src/constants/IMAGES.js
+export const TEAM_IMAGES = {
+  about: "/team-img.png",  // starts with / for public folder
 };

@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-import { IMAGES } from './constants';
+import { IMAGES, TEAM_IMAGES } from './constants';
 
 const services = [
   { title: "Examination", icon: <Stethoscope className="w-5 h-5" />, description: "Comprehensive dental check-ups to maintain your oral health." },
@@ -286,7 +286,7 @@ export default function App() {
             <div className="relative">
               <div className="relative z-10 aspect-[4/5] rounded-[4rem] overflow-hidden border-[1px] border-[#1a1a1a]/5 shadow-2xl">
                 <img
-                src={IMAGES.about}
+                src={TEAM_IMAGES.about}
                 alt="Our Dental Team"
                 className="w-full h-full object-cover"
                 />
